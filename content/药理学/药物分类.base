@@ -1,0 +1,13 @@
+filters:
+  and:
+    - file.folder.containsAll("医学学习/本科笔记/4大三上/药理学")
+    - file.hasProperty("drugtype")
+views:
+  - type: table
+    name: 表格
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - drug
