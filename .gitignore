@@ -1,0 +1,27 @@
+.DS_Store
+node_modules
+public
+prof
+tsconfig.tsbuildinfo
+.obsidian
+.quartz-cache
+private/
+.replit
+replit.nix
+.quartz/
+quartz/cli/tui/dist/
+.turbo/
+
+*.bak
+
+# ==== 合并自 .gitignore.txt: 音视频/PDF/压缩包不入库 ====
+# 音频、视频、PDF、压缩包全部忽略
+*.wav
+*.mp3
+*.mp4
+*.pdf
+*.zip
+*.rar
+# 图片如果你想托管也可以放开，不想传就加上
+# *.png
+# *.jpg
