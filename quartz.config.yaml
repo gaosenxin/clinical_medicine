@@ -12,7 +12,7 @@ configuration:
     - templates
     - .obsidian
   theme:
-    fontOrigin: googleFonts
+    fontOrigin: local
     cdnCaching: true
     typography:
       header: Schibsted Grotesk
@@ -109,10 +109,16 @@ plugins:
     order: 92
   - source: "@quartz-community/quartz-fonts"
     enabled: true
+    options:
+      fontOrigin: local
+      body: '"Segoe UI", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", -apple-system, Roboto, sans-serif'
+      header: '"Segoe UI", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", -apple-system, Roboto, sans-serif'
+      code: '"Cascadia Code", Consolas, "Microsoft YaHei", ui-monospace, monospace'
   - source: "@quartz-themes/core"
     enabled: true
     options:
-      theme: default
+      themeFonts: false
+      theme: catppuccin
       mode: both
   - source: "@quartz-community/remove-draft"
     enabled: true
